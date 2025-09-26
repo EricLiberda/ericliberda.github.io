@@ -80,6 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         pubList.appendChild(li);
+
+        // Add a break after each item
+pubList.appendChild(document.createElement('br'));
         count++;
       });
       if (count === 0) {
