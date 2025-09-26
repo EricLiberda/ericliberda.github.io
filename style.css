@@ -1,0 +1,161 @@
+/*
+ * Stylesheet for the Eric N. Liberda personal webpage.
+ *
+ * A clean, professional layout is used to present Dr. Liberda's
+ * biographical details, research interests, contact information and
+ * dynamically loaded publications. Colour choices are inspired by
+ * Toronto Metropolitan University’s brand palette, using deep blues
+ * and light neutrals for contrast. The hero section uses an
+ * abstract image as a backdrop to set a scientific tone without
+ * depicting any real‑world subjects.
+ */
+
+/* Basic resets */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* Hero banner */
+.hero {
+  position: relative;
+  height: 250px;
+  background-image: url('62bc26de-583e-40fc-a8ee-a37f5ea696e5.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  font-size: 1.4rem;
+  color: #03396c;
+  border-bottom: 2px solid #03396c;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+/* Research interest bullets */
+#research li::before {
+  content: '\2714'; /* check mark */
+  margin-right: 8px;
+  color: #03396c;
+}
+
+/* Publications list */
+#pub-list li {
+  margin-bottom: 8px;
+}
+
+#pub-list a {
+  color: #03396c;
+  text-decoration: none;
+}
+
+#pub-list a:hover {
+  text-decoration: underline;
+}
+
+/* Contact information */
+#contact p {
+  margin: 4px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #03396c;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #a0c4e4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Footnote styling */
+footer ol {
+  margin: 0 auto;
+  padding-left: 20px;
+  text-align: left;
+  max-width: 900px;
+}
+
+footer li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .hero {
+    height: 200px;
+  }
+  .hero .overlay {
+    padding: 15px 25px;
+  }
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  main {
+    padding: 15px;
+  }
+  section h2 {
+    font-size: 1.3rem;
+  }
+}
